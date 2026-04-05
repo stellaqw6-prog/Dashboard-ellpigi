@@ -3,12 +3,12 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width,initial-scale=1.0,maximum-scale=1.0,user-scalable=no">
-<title>UNO-STOREZZ ◈ ADMIN PANEL</title>
+<title>elpigiXstore ◈ ADMIN PANEL</title>
 <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700;900&family=Rajdhani:wght@300;500;700&family=Share+Tech+Mono&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 <style>
 /* ═══════════════════════════════════════════════════
-   UNO-STOREZZ ADMIN PANEL — FULL FEATURED v4
+   elpigiXstore ADMIN PANEL — FULL FEATURED v4
    Cyan/Purple Theme · Firebase Realtime Database
    ═══════════════════════════════════════════════════ */
 :root{
@@ -389,7 +389,7 @@ select.fc option{background:var(--bg3);}
 <div id="ls">
   <div class="lk" id="lbox">
     <div class="lk-icon">⬡</div>
-    <div class="lk-title">UNO-STOREZZ</div>
+    <div class="lk-title">elpigiXstore</div>
     <div class="lk-sub">// ADMIN PANEL ACCESS //</div>
     <div class="lk-iw">
       <input class="lk-in" id="lpass" type="password" placeholder="••••••" maxlength="20" autocomplete="off">
@@ -601,7 +601,7 @@ select.fc option{background:var(--bg3);}
 <!-- DRAWER -->
 <div id="drawer">
   <div class="dr-hdr">
-    <div class="dr-brand">◈ UNO-STOREZZ</div>
+    <div class="dr-brand">◈ elpigiXstore</div>
     <div class="dr-ver">// ADMIN PANEL v4.0 — FIREBASE REALTIME //</div>
   </div>
   <div class="dr-sect">Overview</div>
@@ -642,7 +642,7 @@ select.fc option{background:var(--bg3);}
   <!-- TOP BAR -->
   <div id="topbar">
     <div id="menu-trigger" onclick="toggleDrawer()"><span></span><span></span><span></span></div>
-    <div class="tb-logo-box"><div class="tb-logo-txt">UNO-STOREZZ</div><div class="tb-logo-sub">ADMIN PANEL</div></div>
+    <div class="tb-logo-box"><div class="tb-logo-txt">elpigiXstore</div><div class="tb-logo-sub">ADMIN PANEL</div></div>
     <div class="tb-stats">
       <div class="tbs"><span class="tbs-v cv-a" id="hm">—</span><div class="tbs-l">Members</div></div>
       <div class="tbs-sep"></div>
@@ -961,7 +961,7 @@ select.fc option{background:var(--bg3);}
         <div class="ch"><div class="ct"><i class="fa fa-credit-card"></i>INFO REKENING</div></div>
         <div class="cb">
           <div class="fg"><div class="fl">Nomor Rekening / HP</div><input class="fc" id="pay-num" placeholder="0823-xxxx-xxxx" style="font-family:'Share Tech Mono';font-size:15px;letter-spacing:1px;"></div>
-          <div class="fg"><div class="fl">Nama Pemilik Rekening</div><input class="fc" id="pay-name" placeholder="a.n UNO-STOREZZ"></div>
+          <div class="fg"><div class="fl">Nama Pemilik Rekening</div><input class="fc" id="pay-name" placeholder="a.n elpigiXstore"></div>
           <div class="fg"><div class="fl">URL QR Code Pembayaran</div><input class="fc" id="pay-qr" placeholder="https://..." oninput="prevQR()"></div>
           <div id="qrwrap" style="display:none;margin-bottom:12px;"><img id="qrimg" style="max-height:100px;border-radius:8px;border:1px solid var(--borderA);"></div>
           <div class="dv"></div>
@@ -1027,7 +1027,7 @@ select.fc option{background:var(--bg3);}
       <div class="card">
         <div class="ch"><div class="ct"><i class="fa fa-store"></i>IDENTITAS TOKO</div></div>
         <div class="cb">
-          <div class="fg"><div class="fl">Nama Toko</div><input class="fc" id="cfg-nm" placeholder="UNO-STOREZZ"></div>
+          <div class="fg"><div class="fl">Nama Toko</div><input class="fc" id="cfg-nm" placeholder="elpigiXstore"></div>
           <div class="fg"><div class="fl">Nomor WhatsApp Admin</div><input class="fc" id="cfg-wa2" placeholder="6283xxxxxxxx" style="font-family:'Share Tech Mono'"></div>
           <div class="dv"></div>
           <div class="fg"><div class="fl">Warna Aksen Tema</div>
@@ -1127,7 +1127,7 @@ select.fc option{background:var(--bg3);}
 
 <script>
 // ════════════════════════════════════════════════════════
-//  FIREBASE CONFIG — DATABASE UNO-STOREZZ
+//  FIREBASE CONFIG — DATABASE elpigiXstore
 // ════════════════════════════════════════════════════════
 const FB   = 'https://ell-store-5eee3-default-rtdb.asia-southeast1.firebasedatabase.app/';
 const PASS = '085200'; // ← GANTI PASSWORD DI SINI
@@ -2138,7 +2138,7 @@ function rndLogs(){
 // ════════════════════════════════════════════════════════
 //  SETTINGS
 // ════════════════════════════════════════════════════════
-function rndSett(){const cfg=_K.config||{};document.getElementById('cfg-nm').value=cfg.store_name||'UNO-STOREZZ';document.getElementById('cfg-wa2').value=cfg.wa_number||'';document.getElementById('cfg-acp').value=cfg.accent_color||'#00eaff';document.getElementById('cfg-ach').value=cfg.accent_color||'#00eaff';}
+function rndSett(){const cfg=_K.config||{};document.getElementById('cfg-nm').value=cfg.store_name||'elpigiXstore';document.getElementById('cfg-wa2').value=cfg.wa_number||'';document.getElementById('cfg-acp').value=cfg.accent_color||'#00eaff';document.getElementById('cfg-ach').value=cfg.accent_color||'#00eaff';}
 function syncAcc(){const h=document.getElementById('cfg-ach').value;if(/^#[0-9A-Fa-f]{6}$/.test(h))document.getElementById('cfg-acp').value=h;}
 async function saveSett(){const nm=document.getElementById('cfg-nm').value.trim(),wa=document.getElementById('cfg-wa2').value.trim(),ac=document.getElementById('cfg-acp').value;if(!_K.config)_K.config={};_K.config.store_name=nm;_K.config.wa_number=wa;_K.config.accent_color=ac;try{await fbS('konten/config',_K.config);toast('Pengaturan toko disimpan ✅','success');}catch(e){toast('Gagal: '+e.message,'error');}}
 
@@ -2156,7 +2156,7 @@ async function publishAll(){
 // ════════════════════════════════════════════════════════
 //  EXPORT JSON
 // ════════════════════════════════════════════════════════
-function exportJSON(){const d={members:_M,konten:_K,vouchers:_V,gacha:_G,leaderboard:_LB};const bl=new Blob([JSON.stringify(d,null,2)],{type:'application/json'});const u=URL.createObjectURL(bl);const a=document.createElement('a');a.href=u;a.download='uno-storezz-backup-'+new Date().toISOString().slice(0,10)+'.json';a.click();URL.revokeObjectURL(u);toast('Export berhasil ✅','success');}
+function exportJSON(){const d={members:_M,konten:_K,vouchers:_V,gacha:_G,leaderboard:_LB};const bl=new Blob([JSON.stringify(d,null,2)],{type:'application/json'});const u=URL.createObjectURL(bl);const a=document.createElement('a');a.href=u;a.download='elpigiXstore-backup-'+new Date().toISOString().slice(0,10)+'.json';a.click();URL.revokeObjectURL(u);toast('Export berhasil ✅','success');}
 
 // ════════════════════════════════════════════════════════
 //  DELETE ALL
